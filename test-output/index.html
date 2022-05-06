@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-API_Automation_testing" class="navigator-link">
+              <span class="suite-name border-failed">API Automation testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-API_Automation_testing" class="navigator-link ">
+                    <span>D:\Eclipse\APIAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-API_Automation_testing" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-API_Automation_testing" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-API_Automation_testing" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-API_Automation_testing" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-API_Automation_testing" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-API_Automation_testing" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-API_Automation_testing" class="hide-methods failed suite-API_Automation_testing"> (hide)</a> <!-- hide-methods failed suite-API_Automation_testing -->
+                      <a href="#" panel-name="suite-API_Automation_testing" class="show-methods failed suite-API_Automation_testing"> (show)</a> <!-- show-methods failed suite-API_Automation_testing -->
+                    </span>
+                    <div class="method-list-content failed suite-API_Automation_testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbSelectCoupons" class="method navigator-link" hash-for-method="checkGlobalOrDynamicCoupon">checkGlobalOrDynamicCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="courses.SkillAcademy" class="method navigator-link" hash-for-method="checkPaymentPartnerWithEmi">checkPaymentPartnerWithEmi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-API_Automation_testing -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API_Automation_testing" class="hide-methods passed suite-API_Automation_testing"> (hide)</a> <!-- hide-methods passed suite-API_Automation_testing -->
+                      <a href="#" panel-name="suite-API_Automation_testing" class="show-methods passed suite-API_Automation_testing"> (show)</a> <!-- show-methods passed suite-API_Automation_testing -->
+                    </span>
+                    <div class="method-list-content passed suite-API_Automation_testing">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="scholarship_tests.TestScholarship" class="method navigator-link" hash-for-method="CheckSlugIsNotNull">CheckSlugIsNotNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbPassCoupons" class="method navigator-link" hash-for-method="cashDiscountCoupon">cashDiscountCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbSelectCoupons" class="method navigator-link" hash-for-method="checkCashDiscountCoupon">checkCashDiscountCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbPassCoupons" class="method navigator-link" hash-for-method="checkGlobalCoupon">checkGlobalCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbPassCoupons" class="method navigator-link" hash-for-method="checkMinValue">checkMinValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbPassCoupons" class="method navigator-link" hash-for-method="checkPercentDiscountCoupon">checkPercentDiscountCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbSelectCoupons" class="method navigator-link" hash-for-method="checkPercentDiscountCoupon">checkPercentDiscountCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbPassCoupons" class="method navigator-link" hash-for-method="checkPercentDiscountOnMonthlyPass">checkPercentDiscountOnMonthlyPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbPassCoupons" class="method navigator-link" hash-for-method="checkUseLimit">checkUseLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbSelectCoupons" class="method navigator-link" hash-for-method="checkUseLimit">checkUseLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbSelectCoupons" class="method navigator-link" hash-for-method="fullDiscountCoupon">fullDiscountCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbPassCoupons" class="method navigator-link" hash-for-method="fullDiscountCoupon">fullDiscountCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="courses.SkillAcademy" class="method navigator-link" hash-for-method="getProductId">getProductId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="coupons.TbSelectCoupons" class="method navigator-link" hash-for-method="getProductId">getProductId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="scholarship_tests.TestScholarship" class="method navigator-link" hash-for-method="getScholarshipTests">getScholarshipTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="scholarship_tests.TestScholarship" class="method navigator-link" hash-for-method="scholarshipTestAvailable">scholarshipTestAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="scholarship_tests.TestScholarship" class="method navigator-link" hash-for-method="scholarshipTestStatusCode">scholarshipTestStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Automation_testing" title="scholarship_tests.TestScholarship" class="method navigator-link" hash-for-method="scholarshipTestSuccess">scholarshipTestSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API_Automation_testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API_Automation_testing" class="panel API_Automation_testing">
+          <div class="suite-API_Automation_testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">coupons.TbSelectCoupons</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkGlobalOrDynamicCoupon">
+                  </a> <!-- checkGlobalOrDynamicCoupon -->
+                  <span class="method-name">checkGlobalOrDynamicCoupon</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	623ab87c7e911983460c1ffb expected [1799] but found [1260],
+	623f1ef7f88870597a27f033 expected [399] but found [314],
+	623d8994950b49ad99a3c703 expected [399] but found [314]
+	at coupons.TbSelectCoupons.checkGlobalOrDynamicCoupon(TbSelectCoupons.java:273)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Automation_testing-class-failed -->
+          <div class="suite-API_Automation_testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">courses.SkillAcademy</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPaymentPartnerWithEmi">
+                  </a> <!-- checkPaymentPartnerWithEmi -->
+                  <span class="method-name">checkPaymentPartnerWithEmi</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at courses.SkillAcademy.checkPaymentPartnerWithEmi(SkillAcademy.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Automation_testing-class-failed -->
+          <div class="suite-API_Automation_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">coupons.TbSelectCoupons</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCashDiscountCoupon">
+                  </a> <!-- checkCashDiscountCoupon -->
+                  <span class="method-name">checkCashDiscountCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPercentDiscountCoupon">
+                  </a> <!-- checkPercentDiscountCoupon -->
+                  <span class="method-name">checkPercentDiscountCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkUseLimit">
+                  </a> <!-- checkUseLimit -->
+                  <span class="method-name">checkUseLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fullDiscountCoupon">
+                  </a> <!-- fullDiscountCoupon -->
+                  <span class="method-name">fullDiscountCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getProductId">
+                  </a> <!-- getProductId -->
+                  <span class="method-name">getProductId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Automation_testing-class-passed -->
+          <div class="suite-API_Automation_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">courses.SkillAcademy</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getProductId">
+                  </a> <!-- getProductId -->
+                  <span class="method-name">getProductId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Automation_testing-class-passed -->
+          <div class="suite-API_Automation_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">coupons.TbPassCoupons</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cashDiscountCoupon">
+                  </a> <!-- cashDiscountCoupon -->
+                  <span class="method-name">cashDiscountCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkGlobalCoupon">
+                  </a> <!-- checkGlobalCoupon -->
+                  <span class="method-name">checkGlobalCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMinValue">
+                  </a> <!-- checkMinValue -->
+                  <span class="method-name">checkMinValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPercentDiscountCoupon">
+                  </a> <!-- checkPercentDiscountCoupon -->
+                  <span class="method-name">checkPercentDiscountCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPercentDiscountOnMonthlyPass">
+                  </a> <!-- checkPercentDiscountOnMonthlyPass -->
+                  <span class="method-name">checkPercentDiscountOnMonthlyPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkUseLimit">
+                  </a> <!-- checkUseLimit -->
+                  <span class="method-name">checkUseLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fullDiscountCoupon">
+                  </a> <!-- fullDiscountCoupon -->
+                  <span class="method-name">fullDiscountCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Automation_testing-class-passed -->
+          <div class="suite-API_Automation_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scholarship_tests.TestScholarship</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckSlugIsNotNull">
+                  </a> <!-- CheckSlugIsNotNull -->
+                  <span class="method-name">CheckSlugIsNotNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getScholarshipTests">
+                  </a> <!-- getScholarshipTests -->
+                  <span class="method-name">getScholarshipTests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scholarshipTestAvailable">
+                  </a> <!-- scholarshipTestAvailable -->
+                  <span class="method-name">scholarshipTestAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scholarshipTestStatusCode">
+                  </a> <!-- scholarshipTestStatusCode -->
+                  <span class="method-name">scholarshipTestStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scholarshipTestSuccess">
+                  </a> <!-- scholarshipTestSuccess -->
+                  <span class="method-name">scholarshipTestSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Automation_testing-class-passed -->
+        </div> <!-- panel API_Automation_testing -->
+        <div panel-name="test-xml-API_Automation_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Eclipse\APIAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;API Automation testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;coupons.TbSelectCoupons&quot;/&gt;
+      &lt;class name=&quot;coupons.TbPassCoupons&quot;/&gt;
+      &lt;class name=&quot;courses.SkillAcademy&quot;/&gt;
+      &lt;class name=&quot;scholarship_tests.TestScholarship&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- API Automation testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API_Automation_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API Automation testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API_Automation_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API Automation testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API_Automation_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API Automation testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API_Automation_testing');
+function tableData_API_Automation_testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkGlobalOrDynamicCoupon')
+data.setCell(0, 2, 'coupons.TbSelectCoupons')
+data.setCell(0, 3, 60331);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkCashDiscountCoupon')
+data.setCell(1, 2, 'coupons.TbSelectCoupons')
+data.setCell(1, 3, 20253);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkPercentDiscountCoupon')
+data.setCell(2, 2, 'coupons.TbSelectCoupons')
+data.setCell(2, 3, 20249);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkUseLimit')
+data.setCell(3, 2, 'coupons.TbSelectCoupons')
+data.setCell(3, 3, 19932);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'fullDiscountCoupon')
+data.setCell(4, 2, 'coupons.TbSelectCoupons')
+data.setCell(4, 3, 17641);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getProductId')
+data.setCell(5, 2, 'coupons.TbSelectCoupons')
+data.setCell(5, 3, 7208);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'scholarshipTestStatusCode')
+data.setCell(6, 2, 'scholarship_tests.TestScholarship')
+data.setCell(6, 3, 875);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkPaymentPartnerWithEmi')
+data.setCell(7, 2, 'courses.SkillAcademy')
+data.setCell(7, 3, 792);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkGlobalCoupon')
+data.setCell(8, 2, 'coupons.TbPassCoupons')
+data.setCell(8, 3, 791);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkUseLimit')
+data.setCell(9, 2, 'coupons.TbPassCoupons')
+data.setCell(9, 3, 317);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getProductId')
+data.setCell(10, 2, 'courses.SkillAcademy')
+data.setCell(10, 3, 303);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkMinValue')
+data.setCell(11, 2, 'coupons.TbPassCoupons')
+data.setCell(11, 3, 300);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'cashDiscountCoupon')
+data.setCell(12, 2, 'coupons.TbPassCoupons')
+data.setCell(12, 3, 299);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'fullDiscountCoupon')
+data.setCell(13, 2, 'coupons.TbPassCoupons')
+data.setCell(13, 3, 290);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkPercentDiscountCoupon')
+data.setCell(14, 2, 'coupons.TbPassCoupons')
+data.setCell(14, 3, 269);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkPercentDiscountOnMonthlyPass')
+data.setCell(15, 2, 'coupons.TbPassCoupons')
+data.setCell(15, 3, 252);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'scholarshipTestSuccess')
+data.setCell(16, 2, 'scholarship_tests.TestScholarship')
+data.setCell(16, 3, 241);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'getScholarshipTests')
+data.setCell(17, 2, 'scholarship_tests.TestScholarship')
+data.setCell(17, 3, 234);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'CheckSlugIsNotNull')
+data.setCell(18, 2, 'scholarship_tests.TestScholarship')
+data.setCell(18, 3, 20);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'scholarshipTestAvailable')
+data.setCell(19, 2, 'scholarship_tests.TestScholarship')
+data.setCell(19, 3, 10);
+window.suiteTableData['API_Automation_testing']= { tableData: data, tableDiv: 'times-div-API_Automation_testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-API_Automation_testing">
+              </div> <!-- times-div-API_Automation_testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API_Automation_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API Automation testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkPercentDiscountOnMonthlyPass</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Discount applied on Monthly pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkPercentDiscountCoupon</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">% Discount coupon is working fine</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">fullDiscountCoupon</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Full discount is applicable</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">fullDiscountCoupon</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">100% discount is applicable on all TB passes</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">cashDiscountCoupon</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Cash discount Coupon is working fine</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkUseLimit</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Use limit is applied</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkMinValue</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Min Value validated for all TB passes</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API_Automation_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API_Automation_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">coupons.TbSelectCoupons</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getProductId</span>
+                <span class="method-start">1026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkUseLimit</span>
+                <span class="method-start">8248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPercentDiscountCoupon</span>
+                <span class="method-start">28182 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCashDiscountCoupon</span>
+                <span class="method-start">48434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fullDiscountCoupon</span>
+                <span class="method-start">68688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkGlobalOrDynamicCoupon</span>
+                <span class="method-start">86331 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">coupons.TbPassCoupons</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">146668 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkPercentDiscountOnMonthlyPass</span>
+                <span class="method-start">146671 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPercentDiscountCoupon</span>
+                <span class="method-start">146925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cashDiscountCoupon</span>
+                <span class="method-start">147195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fullDiscountCoupon</span>
+                <span class="method-start">147495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMinValue</span>
+                <span class="method-start">147786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkUseLimit</span>
+                <span class="method-start">148087 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkGlobalCoupon</span>
+                <span class="method-start">148406 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">courses.SkillAcademy</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">149199 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getProductId</span>
+                <span class="method-start">149200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkPaymentPartnerWithEmi</span>
+                <span class="method-start">149504 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scholarship_tests.TestScholarship</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">150298 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getScholarshipTests</span>
+                <span class="method-start">150299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scholarshipTestAvailable</span>
+                <span class="method-start">150535 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scholarshipTestStatusCode</span>
+                <span class="method-start">150547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scholarshipTestSuccess</span>
+                <span class="method-start">151423 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckSlugIsNotNull</span>
+                <span class="method-start">151666 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

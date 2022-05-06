@@ -1,0 +1,24 @@
+Loginc to get active pass id
+
+/*		for(int i=0;i<tbPassType.size();i++)
+		{	
+			if(!tbPassType.get(i).equals("globalPass"))
+			{	
+				tbPassIndex.add(i);
+			}
+		} 
+		
+		globalPasses = tbPasses.path("data.tbPasses._id");
+		
+		if(tbPassIndex.size()==1)
+		{
+			int index = tbPassIndex.get(0);
+			globalPasses.remove(index);
+		}
+		else {
+			for(int i=0;i<tbPassIndex.size();i++)
+			{
+				int index = tbPassIndex.get(i);
+				globalPasses.remove(index);
+			}
+		}*/
